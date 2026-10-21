@@ -1,23 +1,59 @@
-# SmartText AI
+# 🧠 SmartText AI
+
 ### NLP-Based Text Analysis System
 
-SmartText AI is an interactive text analysis application developed using Python and Streamlit. It brings together fundamental Natural Language Processing (NLP) techniques in a single interface to help users explore language patterns, examine word relationships, summarize text, and analyze sentiment.
+SmartText AI is a Python-based Natural Language Processing (NLP) application designed to analyze text and extract meaningful information using different NLP techniques. It provides an interactive interface for text analysis, semantic exploration, summarization, sentiment analysis, and document processing.
 
-## Key Features
+## 🚀 Features
 
-- **N-gram Analysis:** Examines unigram, bigram, and trigram frequency patterns.
-- **Semantic Analysis:** Retrieves word definitions, synonyms, and antonyms using WordNet.
-- **Word Sense Analysis:** Demonstrates a basic dictionary-overlap approach to exploring word meaning in context.
-- **Text Summarization:** Generates extractive summaries by selecting sentences from the original text.
-- **Sentiment Analysis:** Classifies text polarity as positive, negative, or neutral using TextBlob.
-- **Document Processing:** Supports text extraction from PDF and TXT files.
-- **NLP Chat Assistant:** Provides rule-based responses to supported text-analysis queries.
+- **Document Upload:** Upload PDF and TXT files for text analysis.
+- **N-Gram Analysis:** Analyze unigrams, bigrams, and trigrams to identify frequently occurring words and phrases.
+- **Semantic Analysis:** Explore word definitions, synonyms, and antonyms using WordNet.
+- **Word Sense Disambiguation (WSD):** Get a basic context-based hint to understand the meaning of a word.
+- **Text Summarization:** Generate concise summaries using extractive summarization.
+- **Sentiment Analysis:** Classify text as Positive, Negative, or Neutral using TextBlob.
+- **NLP Chat Assistant:** Ask supported questions about the text and access available analysis features through a simple chat interface.
 
-## Technology Stack
+## 🛠️ Technologies Used
 
-Python · Streamlit · NLTK · WordNet · TextBlob · PyMuPDF
+- Python
+- Streamlit
+- NLTK
+- WordNet
+- TextBlob
+- PyMuPDF
 
-## Project Structure
+## ⚙️ Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+Replace `YOUR_REPOSITORY_URL` with your actual GitHub repository URL.
+
+### 2. Open the Project Folder
+
+```bash
+cd SmartText-AI
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your web browser.
+
+## 📂 Project Structure
 
 ```text
 SmartText-AI/
@@ -25,57 +61,25 @@ SmartText-AI/
 ├── nlp_utils.py
 ├── requirements.txt
 ├── README.md
-└── screenshots/
+└── .gitignore
 ```
 
-## Getting Started
+## 🎯 Project Objective
 
-### Prerequisites
-- Python installed on your system
-- Internet access for installing dependencies and downloading required NLTK resources when needed
+The objective of SmartText AI is to demonstrate fundamental NLP techniques through an interactive application that helps users explore, process, and understand textual data.
 
-### Installation
+## 📌 Limitations
 
-```bash
-git clone YOUR_REPOSITORY_URL
-cd SmartText-AI
-python -m venv .venv
-```
+- Word Sense Disambiguation uses a basic dictionary-overlap approach.
+- Text summarization uses an extractive, frequency-based method.
+- Sentiment analysis uses a lexicon-based approach and may not correctly interpret every context.
+- The chat assistant supports predefined question patterns and is not a generative AI chatbot.
 
-Activate the environment on Windows:
+## 👩‍💻 Author
 
-```bash
-.venv\Scripts\activate
-```
+**Mamta Tripathi**  
+MCA AI Student
 
-Install dependencies:
+## 📄 License
 
-```bash
-python -m pip install -r requirements.txt
-```
-
-Launch the application:
-
-```bash
-python -m streamlit run app.py
-```
-
-Open the local URL shown in the terminal.
-
-## Applications
-
-- Exploring word and phrase frequency patterns
-- Learning lexical semantics and word relationships
-- Creating shorter versions of lengthy text
-- Examining basic sentiment polarity
-- Extracting and analyzing text from documents
-
-## Limitations
-
-This project is an educational NLP application. Its summarizer is extractive, sentiment analysis is lexicon-based, word-sense analysis uses a simple overlap method, and the chat assistant is rule-based rather than a generative AI chatbot. Results may require verification against the original text.
-
-## Project Goal
-
-The goal of SmartText AI is to demonstrate how multiple core NLP techniques can be combined into one accessible, interactive Python application.
-
-Feedback and suggestions are welcome.
+This project is intended for academic and educational purposes.
